@@ -9,9 +9,12 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
+    
+    var totalPeople : Double?
+    var bill : Double?
+    var tipPercentage: Int?
+    
     var totalPerPerson : Double?
-    var totalPeople : Int?
-    var billFinal : Int?
     
     @IBOutlet weak var totalPerPersonLabel: UILabel!
     @IBOutlet weak var detailedInfoLabel: UILabel!
@@ -19,6 +22,13 @@ class ResultViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let billTip = (Double(tipPercentage!)/100) * bill! // Calculates the tip
+        
+        totalPerPerson = (bill! + billTip) / totalPeople! // Calculates total per person
+        
+        totalPerPersonLabel.text = "$" + String(format: "%.2f", totalPerPerson!)
+        detailedInfoLabel.text = "Split $\(String(format: "%.2f", bill!)) between \(Int(totalPeople!)) people, with \(tipPercentage!)% tip."
     }
     
     @IBAction func recalculateButtonPressed(_ sender: UIButton) {

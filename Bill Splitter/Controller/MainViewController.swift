@@ -54,4 +54,14 @@ class MainViewController: UIViewController {
     @IBAction func calculateButtonPressed(_ sender: Any) {
         self.performSegue(withIdentifier: "resultSegue", sender: nil)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "resultSegue" {
+            let destination = segue.destination as! ResultViewController
+            
+            destination.bill = Double(billTotal.text!) ?? 0
+            destination.tipPercentage = tipPercentage
+            destination.totalPeople = Double(splitLabel.text!)
+        }
+    }
 }

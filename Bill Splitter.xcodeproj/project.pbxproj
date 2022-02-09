@@ -10,10 +10,10 @@
 		EC06F3A127B317D60050EEF5 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC06F3A027B317D60050EEF5 /* ResultViewController.swift */; };
 		EC2E1EAF27B05D5B0090B754 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2E1EAE27B05D5B0090B754 /* AppDelegate.swift */; };
 		EC2E1EB127B05D5B0090B754 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2E1EB027B05D5B0090B754 /* SceneDelegate.swift */; };
-		EC2E1EB327B05D5B0090B754 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2E1EB227B05D5B0090B754 /* MainViewController.swift */; };
 		EC2E1EB627B05D5B0090B754 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2E1EB427B05D5B0090B754 /* Main.storyboard */; };
 		EC2E1EB827B05D5B0090B754 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC2E1EB727B05D5B0090B754 /* Assets.xcassets */; };
 		EC2E1EBB27B05D5B0090B754 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2E1EB927B05D5B0090B754 /* LaunchScreen.storyboard */; };
+		EC4FA8F227B3EBE2008874C2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2E1EB227B05D5B0090B754 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -149,10 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC2E1EB327B05D5B0090B754 /* MainViewController.swift in Sources */,
 				EC2E1EAF27B05D5B0090B754 /* AppDelegate.swift in Sources */,
 				EC2E1EB127B05D5B0090B754 /* SceneDelegate.swift in Sources */,
 				EC06F3A127B317D60050EEF5 /* ResultViewController.swift in Sources */,
+				EC4FA8F227B3EBE2008874C2 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
